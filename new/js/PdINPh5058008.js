@@ -125,11 +125,7 @@
     }
   
         
-          atomicatEvent({trigger: "load", pixel: "590327420452468"})
-        fbq('trackSingle', '590327420452468', 'PageView', {}, { eventID: getAtomiFbEventId() } )
-        
-          atomicatEvent({trigger: "load", pixel: "1590239014963184"})
-        fbq('trackSingle', '1590239014963184', 'PageView', {}, { eventID: getAtomiFbEventId() } )
+
         
       } catch (error) {
         console.log(error)
