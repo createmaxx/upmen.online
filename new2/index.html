@@ -1,48 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>VSL Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video e Comentários</title>
     <style>
-        body { font-family: Arial, sans-serif; background: black; color: white; text-align: center; }
-        .container { max-width: 800px; margin: auto; padding: 20px; }
-        .video-container { position: relative; width: 100%; padding-bottom: 56.25%; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        .comments { background: white; color: black; padding: 15px; border-radius: 10px; margin-top: 20px; }
-        .comment { margin-bottom: 15px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
-        .comment:last-child { border-bottom: none; }
-        .username { font-weight: bold; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .comments {
+            background: #fff;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .comment {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .comment img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .comment .text {
+            flex: 1;
+        }
+        .comment strong {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Video VTurb -->
         <div class="video-container">
-         <script type="text/javascript" id="scr_67aeb6fa9b8b0a6c86fc2883"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c4327551-93d5-4b51-878b-74bdcdddd74b/ab-test/67aeb6fa9b8b0a6c86fc2883/player.js", s.async=!0,document.head.appendChild(s); </script>
+     <script type="text/javascript" id="scr_67aeb6fa9b8b0a6c86fc2883"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c4327551-93d5-4b51-878b-74bdcdddd74b/ab-test/67aeb6fa9b8b0a6c86fc2883/player.js", s.async=!0,document.head.appendChild(s); </script>
         </div>
         
-        <!-- Comentários Fake do Facebook -->
         <div class="comments">
             <div class="comment">
-                <p class="username">Antônio García</p>
-                <p>Sinceramente pensei que este tipo de coisas eram uma fraude, mas maldita seja... isto realmente funciona!</p>
+                <img src="images/knXdBz9702182.jpeg" alt="Antônio García">
+                <div class="text">
+                    <strong>Antônio García</strong>
+                    <span>Sinceramente pensei que este tipo de coisas eram uma fraude, mas maldita seja... isto realmente funciona!</span>
+                </div>
             </div>
             <div class="comment">
-                <p class="username">Manuel Rodriguez</p>
-                <p>Minha confiança se disparou, e minha garota definitivamente percebeu!</p>
+                <img src="images/kKbcjJ9702182.jpeg" alt="Manuel Rodriguez">
+                <div class="text">
+                    <strong>Manuel Rodriguez</strong>
+                    <span>Minha confiança se disparou, e minha garota definitivamente percebeu!</span>
+                </div>
             </div>
             <div class="comment">
-                <p class="username">José González</p>
-                <p>Não vou mentir, estava inseguro por anos. Agora? Nada mais de ansiedade na hora H!</p>
+                <img src="images/pkvdFI9702182.jpeg" alt="José González">
+                <div class="text">
+                    <strong>José González</strong>
+                    <span>Não vou mentir, estava inseguro por anos. Agora? Nada mais de ansiedade na hora H!</span>
+                </div>
             </div>
             <div class="comment">
-                <p class="username">Francisco Fernandez</p>
-                <p>Meu tamanho e resistência agora estão em outro nível. Confiança = 1000%.</p>
+                <img src="images/YMGuyi9702182.jpeg" alt="Francisco Fernandez">
+                <div class="text">
+                    <strong>Francisco Fernandez</strong>
+                    <span>Meu tamanho e resistência agora estão em outro nível. Confiança = 1000%.</span>
+                </div>
             </div>
             <div class="comment">
-                <p class="username">David Lopez</p>
-                <p>Minha esposa me disse diretamente que ela também sentiu a diferença.</p>
+                <img src="images/pcCbiy9702182.jpeg" alt="David Lopez">
+                <div class="text">
+                    <strong>David Lopez</strong>
+                    <span>Minha esposa me disse diretamente que ela também sentiu a diferença.</span>
+                </div>
             </div>
         </div>
     </div>
