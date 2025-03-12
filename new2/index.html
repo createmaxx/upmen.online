@@ -1,48 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video e Comentários</title>
+    <title>Video + Comentarios</title>
     <style>
         body {
+            background-color: black;
             font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            margin: 0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .video-container {
-            position: relative;
-            padding-bottom: 56.25%; 
-            height: 0;
-            overflow: hidden;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
+            max-width: 450px;
+            position: relative;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
         }
         .comments {
-            background: #fff;
-            color: #000;
-            padding: 20px;
+            width: 100%;
+            max-width: 450px;
+            background: white;
+            padding: 15px;
             border-radius: 10px;
-            margin-top: 20px;
-            text-align: left;
+            margin-top: 10px;
         }
         .comment {
             display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #ddd;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
             padding-bottom: 10px;
+        }
+        .comment:last-child {
+            border-bottom: none;
         }
         .comment img {
             width: 50px;
@@ -50,55 +47,56 @@
             border-radius: 50%;
             margin-right: 10px;
         }
-        .comment .text {
+        .comment-text {
             flex: 1;
         }
-        .comment strong {
-            display: block;
+        .comment-text p {
+            margin: 0;
+        }
+        .comment-text .name {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="video-container">
-     <script type="text/javascript" id="scr_67aeb6fa9b8b0a6c86fc2883"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c4327551-93d5-4b51-878b-74bdcdddd74b/ab-test/67aeb6fa9b8b0a6c86fc2883/player.js", s.async=!0,document.head.appendChild(s); </script>
+    <div class="video-container">
+   <script type="text/javascript" id="scr_67aeb6fa9b8b0a6c86fc2883"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c4327551-93d5-4b51-878b-74bdcdddd74b/ab-test/67aeb6fa9b8b0a6c86fc2883/player.js", s.async=!0,document.head.appendChild(s); </script>
+    </div>
+
+    <div class="comments">
+        <div class="comment">
+            <img src="https://via.placeholder.com/50" alt="">
+            <div class="comment-text">
+                <p class="name">Antônio García</p>
+                <p>Sinceramente pensei que este tipo de coisas eram uma fraude, mas maldita seja... isto realmente funciona!</p>
+            </div>
         </div>
-        
-        <div class="comments">
-            <div class="comment">
-                <img src="images/knXdBz9702182.jpeg" alt="Antônio García">
-                <div class="text">
-                    <strong>Antônio García</strong>
-                    <span>Sinceramente pensei que este tipo de coisas eram uma fraude, mas maldita seja... isto realmente funciona!</span>
-                </div>
+        <div class="comment">
+            <img src="https://via.placeholder.com/50" alt="">
+            <div class="comment-text">
+                <p class="name">Manuel Rodriguez</p>
+                <p>Minha confiança se disparou, e minha garota definitivamente percebeu!</p>
             </div>
-            <div class="comment">
-                <img src="images/kKbcjJ9702182.jpeg" alt="Manuel Rodriguez">
-                <div class="text">
-                    <strong>Manuel Rodriguez</strong>
-                    <span>Minha confiança se disparou, e minha garota definitivamente percebeu!</span>
-                </div>
+        </div>
+        <div class="comment">
+            <img src="https://via.placeholder.com/50" alt="">
+            <div class="comment-text">
+                <p class="name">José González</p>
+                <p>Não vou mentir, estava inseguro durante anos. Agora? Nada mais de ansiedade na hora H!</p>
             </div>
-            <div class="comment">
-                <img src="images/pkvdFI9702182.jpeg" alt="José González">
-                <div class="text">
-                    <strong>José González</strong>
-                    <span>Não vou mentir, estava inseguro por anos. Agora? Nada mais de ansiedade na hora H!</span>
-                </div>
+        </div>
+        <div class="comment">
+            <img src="https://via.placeholder.com/50" alt="">
+            <div class="comment-text">
+                <p class="name">Francisco Fernandez</p>
+                <p>Meu tamanho e resistência agora estão em outro nível. Confiança = 1000%.</p>
             </div>
-            <div class="comment">
-                <img src="images/YMGuyi9702182.jpeg" alt="Francisco Fernandez">
-                <div class="text">
-                    <strong>Francisco Fernandez</strong>
-                    <span>Meu tamanho e resistência agora estão em outro nível. Confiança = 1000%.</span>
-                </div>
-            </div>
-            <div class="comment">
-                <img src="images/pcCbiy9702182.jpeg" alt="David Lopez">
-                <div class="text">
-                    <strong>David Lopez</strong>
-                    <span>Minha esposa me disse diretamente que ela também sentiu a diferença.</span>
-                </div>
+        </div>
+        <div class="comment">
+            <img src="https://via.placeholder.com/50" alt="">
+            <div class="comment-text">
+                <p class="name">David Lopez</p>
+                <p>Minha esposa me disse diretamente que ela também sentiu a diferença.</p>
             </div>
         </div>
     </div>
