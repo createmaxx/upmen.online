@@ -15,7 +15,7 @@
             overflow-x: hidden;
         }
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -24,6 +24,7 @@
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
+            margin-bottom: 20px;
         }
         .video-container iframe {
             position: absolute;
@@ -55,6 +56,36 @@
         .comment-content .text {
             margin-top: 5px;
             font-size: 14px;
+            color: #fff;
+        }
+        .comment-actions {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            font-size: 12px;
+            color: #4267b2;
+        }
+        .comment-actions span {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .comment-actions span:hover {
+            text-decoration: underline;
+        }
+        .comment-actions .likes {
+            display: flex;
+            align-items: center;
+        }
+        .comment-actions .likes img {
+            width: 14px;
+            height: 14px;
+            margin-right: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #90949c;
         }
     </style>
 </head>
@@ -62,7 +93,7 @@
     <div class="container">
         <!-- Espaço para o VSL -->
         <div class="video-container">
-           <script type="text/javascript" id="scr_67aeb6fa9b8b0a6c86fc2883"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c4327551-93d5-4b51-878b-74bdcdddd74b/ab-test/67aeb6fa9b8b0a6c86fc2883/player.js", s.async=!0,document.head.appendChild(s); </script>
+         <script type="text/javascript" id="scr_67aeb6fa9b8b0a6c86fc2883"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c4327551-93d5-4b51-878b-74bdcdddd74b/ab-test/67aeb6fa9b8b0a6c86fc2883/player.js", s.async=!0,document.head.appendChild(s); </script>
         </div>
 
         <!-- Comentários do Facebook -->
@@ -71,17 +102,40 @@
                 <img src="images/knXdBz9702182.jpeg" alt="António García">
                 <div class="comment-content">
                     <div class="username">António García</div>
-                    <div class="text">Sinceramente pensé que este tipo de cosas eran una estafa, pero maldita sea... ¡esto realmente funciona!</div>
+                    <div class="text">Sinceramente pensé que este tipo de cosas eran una estafa, pero maldita sea... ¡esto realmente funciona! Medí antes y después y digamos que estoy MUY contento con los resultados. Mi esposa también.</div>
+                    <div class="comment-actions">
+                        <span>Curitr</span>
+                        <span>Responder</span>
+                        <div class="likes">
+                            <img src="images/fblike.webp" alt="likes">
+                            <span>27</span>
+                        </div>
+                        <span>2 h</span>
+                    </div>
                 </div>
             </div>
             <div class="comment">
                 <img src="images/kKbcjJ9702182.jpeg" alt="Manuel Rodriguez">
                 <div class="comment-content">
                     <div class="username">Manuel Rodriguez</div>
-                    <div class="text">Hombre, al principio era escéptico, pero después de dos semanas, ¡la diferencia es increíble!</div>
+                    <div class="text">Hombre, al principio era escéptico, pero después de dos semanas, ¡la diferencia es increíble! Mi confianza se disparó por las nubes y mi chica definitivamente se dio cuenta. ¡Ojalá hubiera encontrado esto antes!</div>
+                    <div class="comment-actions">
+                        <span>Curitr</span>
+                        <span>Responder</span>
+                        <div class="likes">
+                            <img src="images/fblike.webp" alt="likes">
+                            <span>27</span>
+                        </div>
+                        <span>1 h</span>
+                    </div>
                 </div>
             </div>
             <!-- Adicione mais comentários conforme necessário -->
+        </div>
+
+        <!-- Rodapé -->
+        <div class="footer">
+            Complemento de comentarios de Facebook
         </div>
     </div>
 </body>
